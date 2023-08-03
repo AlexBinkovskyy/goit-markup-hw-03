@@ -7,10 +7,48 @@
 
 img {
   display: block;
-  
   margin: 0;
   padding: 0;
 }
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* VARIABLES */
+:root {
+  --navyblue: #2e2f42;
+  --iris: #4d5ae5;
+  --slate: #434455;
+  --main-bkgrnd-color: #ffffff;
+  --cloud: #f4f4fd;
+  --ocean: #404bbf;
+  --white: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
 
 body {
   background-color: var(--main-bkgrnd-color);
@@ -21,7 +59,7 @@ body {
 }
 
 .container {
-  width: 1128px;
+  max-width: 1128px;
   margin: 0 156px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -34,12 +72,6 @@ body {
   cursor: pointer;
 }
 
-button {
-  display: block;
-  cursor: pointer;
-  border: none;
-}
-
 .hero-button {
   background-color: #4d5ae5;
   color: #ffffff;
@@ -49,6 +81,7 @@ button {
   padding: 16px 32px;
   border-radius: 4px;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn-container {
@@ -62,11 +95,6 @@ button {
 
 .address {
   font-style: normal;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
 }
 
 .list .link:hover,
@@ -83,17 +111,6 @@ button {
 .link.adr-item:hover,
 .link.adr-item:focus {
   color: var(--ocean);
-}
-
-/* VARIABLES */
-:root {
-  --navyblue: #2e2f42;
-  --iris: #4d5ae5;
-  --slate: #434455;
-  --main-bkgrnd-color: #ffffff;
-  --cloud: #f4f4fd;
-  --ocean: #404bbf;
-  --white: #ffffff;
 }
 
 /* Logo */
