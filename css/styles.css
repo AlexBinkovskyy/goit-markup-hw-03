@@ -17,9 +17,12 @@ button {
   border: none;
 }
 
+a {
+  cursor: pointer;
+}
+
 .list {
   display: flex;
-
   list-style: none;
   padding: 0;
   margin: 0;
@@ -60,6 +63,7 @@ body {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1158px;
   margin: 0 141px;
@@ -67,14 +71,12 @@ body {
 }
 
 header {
-  height: 72px;
   border-bottom: 1px solid #e7e9fc;
 }
 
 header .container {
   padding: 0 15px;
   width: 1158px;
-  height: 72px;
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
 }
@@ -84,11 +86,24 @@ header .container {
 }
 
 .nav-box {
-  display: flex;
   margin-right: 332px;
 }
 
-.nav-box-list: {
+.nav-box .list {
+  gap: 40px;
+}
+
+.nav-box .body-medium {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.list-items {
   gap: 40px;
 }
 
@@ -96,7 +111,7 @@ header .container {
   display: flex;
 }
 
-.address-list .list-item:not(:last-child) {
+.address-list .list-item:first-child {
   margin-right: 40px;
 }
 
@@ -126,10 +141,6 @@ header .container {
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
-}
-
-.address {
-  font-style: normal;
 }
 
 .list .link:hover,
