@@ -161,20 +161,15 @@ header .container {
   color: var(--ocean);
 }
 
-.hero-section {
-  display: block;
+.hero-section .container {
+  flex-direction: column;
+  align-items: center;
   background-color: var(--navyblue);
-  padding: 188px 472px 48px;
-  justify-content: center;
-  align-content: center;
-}
-
-.hero-box {
-  justify-content: center;
-  align-content: center;
+  padding: 188px 0;
 }
 
 .hero-button {
+  min-width: 169px;
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
@@ -182,8 +177,6 @@ header .container {
   letter-spacing: 0.04em;
   padding: 16px 32px;
   border-radius: 4px;
-  margin: 0 auto;
-  margin-bottom: 186px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -199,6 +192,7 @@ header .container {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  max-width: 496px;
   margin-bottom: 48px;
 }
 
