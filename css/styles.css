@@ -86,10 +86,13 @@ header .container {
 }
 
 .nav-box {
+  display: flex;
   margin-right: 332px;
+  align-items: center;
 }
 
 .nav-box .list {
+  display: flex;
   gap: 40px;
 }
 
