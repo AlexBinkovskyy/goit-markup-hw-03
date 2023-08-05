@@ -119,6 +119,7 @@ header .container {
 
 .nav-box .list {
   display: flex;
+  gap: 40px;
  }
 
 .nav-box .body-medium {
@@ -132,7 +133,7 @@ header .container {
 }
 
 .nav-box-list {
-  gap: 40px;
+  
 }
 
 .address-list {
@@ -323,7 +324,7 @@ header .container {
   letter-spacing: 0.02em;
 }
 
-.container .list {
+.container.team .list {
   flex-wrap: wrap;
   --listeditems: 4;
   gap: var(--listed-gap);
@@ -400,8 +401,8 @@ header .container {
 .portf-list {
   flex-wrap: wrap;
   --listeditems: 3;
-  column-gap: var(--listed-gap);
   row-gap: 48px;
+  column-gap: var(--listed-gap);
   width: calc(100% - (var(--listed-gap) * (var(--listeditems) - 1))) /
     var(--listeditems);
 }
