@@ -256,15 +256,16 @@ header .container {
     var(--listeditems);
 }
 
+/*  */
+/*  */
+/*  */
+
 .what-a-w-doing {
   padding-bottom: 120px;
 }
 
 .container.activities .title-second {
   margin-bottom: 72px;
-}
-
-.container.activities {
 }
 
 .container.activities .list {
@@ -279,6 +280,10 @@ header .container {
   max-width: 360px;
 }
 
+/*  */
+/*  */
+/*  */
+
 .our-team {
   padding: 120px 0;
   background-color: var(--cloud);
@@ -289,7 +294,6 @@ header .container {
 }
 
 .container.team {
-  justify-content: center;
   padding: 32px 0;
 }
 
