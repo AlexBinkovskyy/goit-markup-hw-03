@@ -297,7 +297,7 @@ header .container {
   padding: 32px 0;
 }
 
-.card-content {
+.our-team .card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -410,6 +410,7 @@ header .container {
   text-align: left;
   justify-content: flex-start;
   align-items: flex-start;
+  border-top: none;
 }
 
 .card-content .title-second {
@@ -431,7 +432,6 @@ header .container {
 
 .portfolio-section {
   padding: 96px 0 120px 0;
-  /* margin-bottom: 72px; */
 }
 
 .portfolio-section .filter {
@@ -440,9 +440,9 @@ header .container {
   margin-bottom: 72px;
 }
 
-.portf-list-item {
+/* .portf-list-item {
   border-top: none;
-}
+} */
 
 .portf-list-text {
   color: var(--slate);
