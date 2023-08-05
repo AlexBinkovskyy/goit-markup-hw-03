@@ -96,10 +96,10 @@ header .container {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 
 .logo-box {
+  margin-right: 76px;
 }
 
 .logo-dark {
