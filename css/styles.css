@@ -115,7 +115,6 @@ header .container {
   display: flex;
   margin-right: 332px;
   align-items: center;
-  gap: 40px
 }
 
 .nav-box .list {
@@ -132,7 +131,7 @@ header .container {
   font-style: normal;
 }
 
-.nav-box .list-items {
+.nav-box-list {
   gap: 40px;
 }
 
