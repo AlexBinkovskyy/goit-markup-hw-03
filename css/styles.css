@@ -345,7 +345,6 @@ header .container {
 }
 
 .footer .container {
-  display: flex;
   flex-direction: column;
 }
 
@@ -358,7 +357,15 @@ header .container {
   margin-bottom: 16px;
 }
 
+/* PORTFOLIO */
+/* PORTFOLIO */
+/* PORTFOLIO */
+/* PORTFOLIO */
+/* PORTFOLIO */
+/* PORTFOLIO */
+
 .filter-item {
+  max-width: 360px;
 }
 
 .filter-button {
@@ -373,6 +380,18 @@ header .container {
 .filter-button:focus {
   color: #ffffff;
   background-color: #404bbf;
+}
+
+/* список */
+.prtflio-card .list {
+  flex-wrap: wrap;
+  --listeditems: 3;
+  gap: var(--listed-gap);
+  width: calc(100% - (var(--listed-gap) * (var(--listeditems) - 1))) /
+    var(--listeditems);
+}
+
+.cards {
 }
 
 .portf-list-text {
