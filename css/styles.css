@@ -374,12 +374,15 @@ header .container {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
   padding: 12px 24px;
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 
 .portf-list-item .title-second {
@@ -407,6 +410,7 @@ header .container {
 
 .card-content .title-second {
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .card-content {
@@ -415,7 +419,6 @@ header .container {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
   align-self: stretch;
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
