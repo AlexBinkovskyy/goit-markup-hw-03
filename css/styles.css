@@ -328,9 +328,9 @@ header .container {
   justify-content: space-between;
   --listeditems: 4;
   gap: var(--listed-gap);
-  /* width: calc((100% - 72px) / 4);  */
-  flex-basis: calc(100% - (var(--listed-gap) * (var(--listeditems) - 1))) /
-    var(--listeditems);
+  flex-basis: calc((100% - 72px) / 4); 
+  /* flex-basis: calc(100% - (var(--listed-gap) * (var(--listeditems) - 1))) /
+    var(--listeditems); */
 }
 
 /*  */
