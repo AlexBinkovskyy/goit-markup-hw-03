@@ -435,10 +435,9 @@ header .container {
   justify-content: center;
   margin-bottom: 72px;
 }
-.portf-list-item {
-}
 
-.filter {
+.portf-list-item {
+  border-top: none;
 }
 
 .portf-list-text {
