@@ -142,7 +142,7 @@ header .container {
   text-transform: uppercase;
 }
 
-.nav-box .logo-dark {
+.nav-box .link.logo {
   margin-right: 76px;
 }
 
@@ -324,7 +324,7 @@ header .container {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-card-content  {
+.team-card-content {
   text-align: center;
   padding: 32px 0;
 }
@@ -371,8 +371,11 @@ header .container {
 /* PORTFOLIO */
 /* PORTFOLIO */
 
-.filter-item {
-  max-width: 360px;
+.portfolio-section .list.filter {
+  display: flex;
+  gap: var(--listed-gap);
+  justify-content: center;
+  padding: 96px 0 72px 0;
 }
 
 .filter-button {
@@ -393,61 +396,46 @@ header .container {
   border: 1px solid transparent;
 }
 
-.portf-list-item .title-second {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2; /* 120% */
-  letter-spacing: 0.02em;
-}
-
 /* список */
 .portf-list {
+  display: flex;
   flex-wrap: wrap;
   --listeditems: 3;
-  row-gap: 48px;
+  row-gap: calc(var(--listed-gap) * 2);
   column-gap: var(--listed-gap);
-  width: calc(100% - (var(--listed-gap) * (var(--listeditems) - 1))) /
-    var(--listeditems);
+  padding-bottom: 120px;
 }
 
-.portf-list .card-content {
-  text-align: left;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border-top: none;
-}
-
-.card-content .title-second {
-  margin: 0;
-  margin-bottom: 8px;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-self: stretch;
+.portf-list-item {
+  width: calc(
+    (100% - var(--listed-gap) * (var(--listeditems) - 1)) / var(--listeditems)
+  );
   border: 1px solid var(--cornflower);
   background: var(--white);
 }
 
-.portfolio-section {
-  padding: 96px 0 120px 0;
+.portfolio-section .title-second {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
-
-.portfolio-section .filter {
-  gap: var(--listed-gap);
-  justify-content: center;
-  margin-bottom: 72px;
-}
-
-/* .portf-list-item {
-  border-top: none;
-} */
 
 .portf-list-text {
   color: var(--slate);
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
+
+.portf-card-content {
+  padding: 32px 16px;
+}
+
+/* .portf-list .card-content {
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: none;
+} */
