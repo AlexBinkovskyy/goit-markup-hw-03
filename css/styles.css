@@ -371,11 +371,16 @@ header .container {
 /* PORTFOLIO */
 /* PORTFOLIO */
 
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .portfolio-section .list.filter {
   display: flex;
   gap: var(--listed-gap);
   justify-content: center;
-  padding: 96px 0 72px 0;
+  margin-bottom: 72px;
 }
 
 .filter-button {
@@ -403,7 +408,6 @@ header .container {
   --listeditems: 3;
   row-gap: calc(var(--listed-gap) * 2);
   column-gap: var(--listed-gap);
-  padding-bottom: 120px;
 }
 
 .portf-list-item {
@@ -431,11 +435,6 @@ header .container {
 
 .portf-card-content {
   padding: 32px 16px;
-}
-
-/* .portf-list .card-content {
-  text-align: left;
-  justify-content: flex-start;
-  align-items: flex-start;
+  border: 1px solid #e7e9fc;
   border-top: none;
-} */
+}
